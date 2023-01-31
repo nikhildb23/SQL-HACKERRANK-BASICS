@@ -52,7 +52,7 @@ SELECT * FROM CITY WHERE POPULATION >'100000' AND COUNTRYCODE='USA';
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 SQL QUERY 
@@ -62,12 +62,12 @@ Input Format
 
 The STATION table is described as follows:
 
-|FIELD|TYPE|
-|ID | NUMBER|
-|CITY|VARCHAR(20)|
-|STATE|VARCHAR(2)|
-|LAT_N|NUMBER|
-|LONG_W|NUMBER|
+|  FIELD  |  TYPE  |
+|ID       | NUMBER |
+|CITY     |VARCHAR(20)|
+|STATE    |VARCHAR(2)|
+|LAT_N    |NUMBER|
+|LONG_W   |NUMBER|
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 '''SOLUTION'''
