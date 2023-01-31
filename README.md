@@ -63,6 +63,7 @@ Input Format
 The STATION table is described as follows:
 
 |  FIELD  |  TYPE  |
+|---------|--------|
 |ID       | NUMBER |
 |CITY     |VARCHAR(20)|
 |STATE    |VARCHAR(2)|
