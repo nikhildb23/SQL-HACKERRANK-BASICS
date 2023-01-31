@@ -16,7 +16,7 @@ The CITY table is described as follows:
 
 ******SOLUTION*******
 
-'''SQL
+
 SELECT * FROM CITY WHERE POPULATION >'100000' AND COUNTRYCODE='USA';
-''''
+
 
