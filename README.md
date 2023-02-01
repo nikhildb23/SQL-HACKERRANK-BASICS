@@ -39,7 +39,41 @@ Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE f
 **Solution**
 ```sql
 */SELECT * FROM CITY WHERE COUNTRYCODE='JPN';
-'''
+```
+
+BASIC SQL PRACTICE 4
+
+Query a list of CITY and STATE from the STATION table.
+
+**Solution**
+```sql
+*/SELECT CITY,STATE FROM STATION;
+```
+
+BASIC SQL PRACTICE 5
+
+Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+
+**Solution**
+```sql
+*/SELECT DISTINCT CITY FROM STATION WHERE ID%2=0;
+
+```
+BASIC SQL PRACTICE 6
+
+Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+**Solution**
+```sql
+*/SELECT COUNT(CITY)-COUNT(DISTINCT CITY) FROM STATION;
+
+```
+BASIC SQL PRACTICE 7
+
+Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+
+
+
+
 
 
 
@@ -149,6 +183,30 @@ Query the list of CITY names from STATION that do not end with vowels. Your resu
 **Solution**
 ```sql
 SELECT DISTINCT(CITY) FROM STATION WHERE  CITY NOT LIKE '%A' AND CITY NOT LIKE '%E' AND CITY NOT LIKE '%I' AND CITY NOT LIKE '%O' AND CITY NOT LIKE '%U';
+
+
 ```
+
+BASIC SQL PRACTICE
+
+Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
+
+Input Format
+
+The Employee table containing employee data for a company is described as follows:
+
+![MwQdpOb1](https://user-images.githubusercontent.com/124073659/216010357-c151f4db-8357-46ce-bc26-3d3c6e04eb7b.png)
+where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is their monthly salary
+
+![G6Waetp 2](https://user-images.githubusercontent.com/124073659/216010841-b8a065c7-f8c0-4394-bb99-7fbfb7e1c870.png)
+
+![pATveQL3](https://user-images.githubusercontent.com/124073659/216011224-33aab483-5b70-4131-8d1c-5b2fcd81ae3e.png)
+
+**Solution**
+```sql
+SELECT NAME FROM EMPLOYEE ORDER BY NAME;
+
+```
+
 
 
