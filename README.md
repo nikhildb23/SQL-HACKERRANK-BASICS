@@ -206,7 +206,9 @@ where employee_id is an employee's ID number, name is their name, months is the 
 ```sql
 SELECT NAME FROM EMPLOYEE ORDER BY NAME;
 
+
 ```
 
+BASICE SQL PRACTICE
 
 
