@@ -274,6 +274,24 @@ Write a query that prints a list of employee names (i.e.: the name attribute) fo
 
 ```
 
+BASIC SQL PRACTICE
+
+Query the sum of Northern Latitudes (LAT_N) from STATION having values greater 38.7880 than  and less than 137.2345 . Truncate your answer to 4 decimal places.
+
+Input Format
+
+The STATION table is described as follows:
+
+![tNqhUve6](https://user-images.githubusercontent.com/124073659/216449258-5bd7b3cc-07df-4a65-9d4e-a998e025e5fb.png)
+
+**Solution**
+```sql
+*/SELECT ROUND(SUM(LAT_N),4) FROM STATION WHERE LAT_N > '38.7880' AND LAT_N< '137.2345';
+
+```
+
+
+
 
 
 
