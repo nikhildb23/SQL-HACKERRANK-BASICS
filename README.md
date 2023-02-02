@@ -71,6 +71,58 @@ BASIC SQL PRACTICE 7
 
 Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
 
+Sample Input
+
+For example, CITY has four entries: DEF, ABC, PQRS and WXY.
+
+Sample Output
+
+ABC 3
+PQRS 4
+
+Explanation
+
+When ordered alphabetically, the CITY names are listed as ABC, DEF, PQRS, and WXY, with lengths  and . The longest name is PQRS, but there are  options for shortest named city. Choose ABC, because it comes first alphabetically.
+
+Note
+You can write two separate queries to get the desired output. It need not be a single query.
+
+**Solution**
+```sql
+
+*/select top 1 city, len(city) from station order by len(city) ASC, city ASC; 
+select top 1 city, len(city) from station order by len(city) DESC, city ASC;
+```
+
+BASIC SQL PRACTICE 8
+
+Query the Name of any student in STUDENTS who scored higher than 75 Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+
+Input Format
+
+The STUDENTS table is described as follows:
+
+![aeV5qC44](https://user-images.githubusercontent.com/124073659/216286131-ac6e932d-5463-4385-ba6b-993c87410d69.png)
+
+Sample Output
+
+Ashley
+Julia
+Belvet
+Explanation
+
+Only Ashley, Julia, and Belvet have Marks > 75. If you look at the last three characters of each of their names, there are no duplicates and 'ley' < 'lia' < 'vet'.
+
+**Solution**
+```sql
+*/SELECT NAME FROM STUDENTS WHERE MARKS>'75' ORDER BY RIGHT(NAME,3),ID ASC;
+
+```
+
+
+
+
+
 
 
 
